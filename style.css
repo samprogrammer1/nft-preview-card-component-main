@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    width: 327px;
+    height: 543px;
+    padding: 24px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: hsl(216, 50%, 16%);
+}
+
+.card .card-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 278px;
+    height: 278px; */
+}
+.card-img:hover {
+    cursor: pointer;
+}
+.card .card-img:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card .card-img .top-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.card-img-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    opacity: 0;
+    background-color: hsla(178, 100%, 50%, 0.5);
+}
+
+.content .card-title {
+    padding-top:  20px;
+    color: white;
+    margin-bottom: 12px;
+    height: 28px;
+}
+.content .card-details {
+    height: 52px;
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.content .card-pay {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    height: 20px;
+}
+
+.content .card-pay .price img {
+    width: 11px;
+    height: 18px;
+    padding-right: 8px;
+}
+
+.content .card-pay .price {
+    color: hsl(178, 100%, 50%);
+}
+.content .card-pay .time img {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.content .card-pay .time {
+    color: hsl(215, 51%, 70%);
+}
+
+.card-pay p {
+    font-family: 'Outfit', sans-serif;
+}
+
+.card-seperator {
+    margin-bottom: 16px;
+    width: 100%;
+    height: 1px;
+    background: hsl(215, 51%, 70%);
+}
+
+
+.profile {
+    font-size: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.profile img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+}
+
+.profile p {
+    color:  hsl(215, 51%, 70%);
+    margin-left: 16px;
+}
+.profile p  span{
+    color:  white;
+}
+
+.profile p  span:hover{
+    color:  red;
+}
+
+
+@media only screen and (max-width: 375px) {
+    .card {  
+        width: 100%;
+        margin: 30px;
+    }
+}
